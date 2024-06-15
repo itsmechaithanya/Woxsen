@@ -332,10 +332,6 @@ page4();
 
 function swiper(){
     var swiper = new Swiper(".mySwiper", {
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: true,
-          },
         spaceBetween: 2,
         mousewheel: true,
         pagination: {
