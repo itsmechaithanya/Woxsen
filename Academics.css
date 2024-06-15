@@ -1,0 +1,91 @@
+#page4{
+    width: 100%;
+    height: 500vh;
+    padding: 1vw 8vw;
+}
+#featured {
+    padding: 2vw 0vw;
+}
+.heading>h1 {
+    line-height: 1;
+    font-size: 3vw;
+    font-weight:400;   
+}
+.heading span {
+    color: #EF495D;
+}
+#schools {
+    /* background-color: bisque; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.sleft{
+    overflow: aut;
+    width: 45%;
+    height: inherit;
+}
+.elem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+#schools .sleft{
+    padding-left: 1vw;
+    width: 45%;
+    /* background-color: antiquewhite; */
+}
+#schools .sleft .elem h1{
+    font-size: 4vw;
+    color: #EF495D;
+}
+#schools .sleft .elem h1 span{
+    font-size: 4vw;
+    color: #EF495D;
+}
+#schools .sleft .elem h3{
+    padding: 1vw 0vw;
+    font-size:2.5vw;
+    font-family: matter-light;
+    font-weight: 100;
+}
+#schools .sleft .elem span{
+    font-size:2.5vw;
+    font-family: matter-light;
+    font-weight: 100;
+    color: #EF495D;
+}
+#schools .sleft .elem button{
+    margin-right:27vw;
+    background-color:rgb(180, 179, 179);
+    padding: 1vw;
+    border-radius: 5vw;
+    border: none;
+}
+
+#schools .sleft .elem h4{
+    text-transform: uppercase;
+    color: gray;
+}
+.sright{
+    width: 45%;
+    height: inherit;
+    /* border: 1px solid rgb(0, 255, 102); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.sright .images{
+    height: 100%;
+    width: 100%;
+}
+.sright .images img{
+    height: 100%;
+    width: 100%;
+    object-position:center;
+    object-fit: cover;
+}
