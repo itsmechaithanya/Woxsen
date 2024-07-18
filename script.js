@@ -199,6 +199,29 @@ function navan(){
             scrub:0.5,
         }
     });
+    // gsap.to("#navpart2 #navlinks,#navpart2 .icons",{
+    //     transform:"translateY(0%)",
+    //     opacity:1,
+    //     scrollTrigger:{
+    //         trigger:"#page1",
+    //         scroller:".main",
+    //         start:"top -5%",
+    //         end:"top",
+    //         scrub:0.5,
+    //     }
+    // });
+    
+    // gsap.to("#navpart2 #navlinks,#navpart2 .icons",{
+    //     transform:"translateY(0%)",
+    //     opacity:1,
+    //     scrollTrigger:{
+    //         trigger:"#page1",
+    //         scroller:".main",
+    //         start:"top -5%",
+    //         end:"top",
+    //         scrub:0.5,
+    //     }
+    // });
 }
 navan();
 

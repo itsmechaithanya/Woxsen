@@ -204,9 +204,9 @@ overflow-x: hidden;
     object-fit: cover;
 }
 #page2{
-    height:41vh ;
+    min-height:40vh ;
     width: 100%;
-    /* background-color: rgb(114, 114, 251); */
+    background-color: rgb(114, 114, 251);
 }
 #move{
     /* margin-top: 5.5vw; */
