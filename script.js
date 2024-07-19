@@ -184,21 +184,22 @@ function navan(){
             trigger:"#page1",
             scroller:".main",
             start:"top",
+            // markers:true,
             end:"top -5%",
             scrub:0.5,
         }
     });
-    gsap.to("#navpart2 #navlinks,#navpart2 .icons",{
-        transform:"translateY(-100%)",
-        opacity:0,
-        scrollTrigger:{
-            trigger:"#page1",
-            scroller:".main",
-            start:"top",
-            end:"top -5%",
-            scrub:0.5,
-        }
-    });
+    // gsap.to("#navpart2 #navlinks,#navpart2 .icons",{
+    //     transform:"translateY(-100%)",
+    //     opacity:0,
+    //     scrollTrigger:{
+    //         trigger:"#page1",
+    //         scroller:".main",
+    //         start:"top",
+    //         end:"top -5%",
+    //         scrub:0.5,
+    //     }
+    // });
     // gsap.to("#navpart2 #navlinks,#navpart2 .icons",{
     //     transform:"translateY(0%)",
     //     opacity:1,
@@ -283,7 +284,7 @@ back();
 function ppp(){
 
     var clutter = "";
-    document. querySelector ("#page2 .words p"). textContent.split(" ").forEach(function(dets){
+    document. querySelector (".words p"). textContent.split(" ").forEach(function(dets){
         clutter += `<span> ${dets} </span>`
         document. querySelector ("#page2 .words p"). innerHTML = clutter;
     })
@@ -293,7 +294,7 @@ function ppp(){
             trigger:`#page2 .words p span`,
             scroller:".main",
             start:"top 75%",
-            end:"top 15%",
+            end:"top 30%",
             // markers:true,
             scrub:2,
         },
@@ -313,7 +314,27 @@ function ppp(){
             trigger:`.page5 .words p span`,
             scroller:".main",
             start:"top 80%",
-            end:"top 20%",
+            end:"top 30%",
+            markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
+
+    
+    var clutter = "";
+    document. querySelector (".page6 .words p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page6 .words p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page6 .words p span",{
+        scrollTrigger:{
+            trigger:`.page6 .words p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
             // markers:true,
             scrub:2,
         },
