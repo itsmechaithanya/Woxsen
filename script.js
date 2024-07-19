@@ -315,14 +315,14 @@ function ppp(){
             scroller:".main",
             start:"top 80%",
             end:"top 30%",
-            markers:true,
+            // markers:true,
             scrub:2,
         },
         stagger:.2,
         color:`#000000`,
     })
 
-    
+
     var clutter = "";
     document. querySelector (".page6 .words p"). textContent.split(" ").forEach(function(dets){
         clutter += `<span> ${dets} </span>`

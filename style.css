@@ -46,7 +46,7 @@ overflow-x: hidden;
 #nav{
     position: fixed;
     width: 100%;
-    padding: 1vw;
+    /* padding: 1vw; */
     display: flex;
     z-index: 6;
     align-items:flex-start;
@@ -54,8 +54,8 @@ overflow-x: hidden;
 }
 .navlogo{
     height:6vw;
-    width: 10vw;
-    margin: 1vw 0vw;
+    width: 12vw;
+    margin-top: 1.5vw;
     /* background-color: black; */
     overflow: hidden;
 }
@@ -63,59 +63,29 @@ overflow-x: hidden;
     height: 100%;
 }
 .navlogo .firstlogo{
-    height: 8.4vh;
+    height: 9vh;
     margin-bottom: 1vw;
+    padding-left: 1vw;
     /* margin-bottom: 1vw; */
 }
 .navlogo .second{
-    padding-left: -.7vw;
+    padding-left: .7vw;
     height: 12vh;
-}
-#nav #navpart2{
-    display: flex;
-    align-items: center;
-}
-#navlinks{
-    padding: 1vw;
-}
-#nav #navpart2 #navlinks{
-    display: flex;
-    margin-right: 3vw;
-}
-#nav #navpart2 #navlinks a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin:0px .7vw;
-    pointer-events: all; 
-}
-#nav #navpart2 #navlinks a:nth-child(8){
-    margin-right: 3vw;
-}
-#nav #navpart2 #navlinks a:hover{
-    color:#EF495D;
-}
-#nav #navpart2 #navlinks h4{
-    font-weight: 100;
 }
 .menu{
     color: #000000;
     background-color:#ef495c3b;
     backdrop-filter: blur(10px);
     font-size: 1.5vw;
-    padding: .5vw 1vw;
-    /* padding-top: .4vw;
-    padding-bottom: .2vw;
-    padding-left:1.5vw;
-    padding-right:1.5vw; */
+    padding: .5vw .5vw;
     border-radius: 2vw 0vw 0vw 2vw ;
-    margin-left:1vw ;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 9;
-    top: 2.5%;
+    top: 4.1%;
     right: 0%;
 }
 .menu i{
@@ -125,14 +95,15 @@ overflow-x: hidden;
     padding-right: .5vw ;
 }
 .menu h4{
+    padding-bottom: .1vw;
     font-weight: 100;
     font-family: matter light;
 }
 .full{
     height: 100vh;
     width: 100vw;
-    background-color:#eb7583a0;
-    backdrop-filter: blur(1.5vw);
+    background-color:#ffffffa0;
+    backdrop-filter: blur(20px);
     position: absolute;
     display: flex;
     align-items: center;
@@ -161,12 +132,13 @@ overflow-x: hidden;
 }
 .full i{
     font-size: 2.9vw;
-    background-color:#ffffffcd;
+    background-color:#ef495c3b;
+    backdrop-filter: blur(10px);
     color: #000000;
     border-radius: 50%;
     font-weight: 100;
     position: absolute;
-    top: 2%;
+    top: 4%;
     right: 2%;
     cursor: pointer;
 }
@@ -214,18 +186,25 @@ overflow-x: hidden;
     
 }
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: end;
     justify-content: center;
-    /* margin-top: 10vw; */
+    padding: 0vw .8vw;
+    padding-top: 11vh;
     /* background-color: aqua; */
 }
+#page1 h1{
+    font-size: 1.5vw;
+    font-weight: 900;
+    text-transform: capitalize;
+    /* padding-bottom: 1vw; */
+}
 #page1 video{
-    width: 85%;
-    height: 80%;
-    margin-top :4vw;
+    width: 98.5vw;
+    height:90vh;
     object-fit: cover;
 }
 #page2{
@@ -288,18 +267,21 @@ overflow-x: hidden;
     font-weight: 100;
 }
 #page3{
-    height: 100vh;
-    width: 100%;
+    height:fit-content;
+    width: 100vw;
     display:flex;
     justify-content: center;
     align-items:center;
     /* padding-top: 2vw;
     padding: 0vw 8vw; */
 }
+.back{
+    margin-top: 4vh;
+}
 .back img{
     height:90vh;
     width: 85vw;
-    /* padding-top: 7vw; */
+    /* padding-top: 10vh; */
     object-fit: cover;
 }
 .page4{
@@ -493,6 +475,9 @@ overflow-x: hidden;
 .page6 h1 span{
     color: #EF495D;
 }
+.page6 .words{
+    padding-top: 1.5vw;
+}
 .page6 .words p span{
     font-family:matter-light;
     color: #afafaf;
@@ -501,7 +486,8 @@ overflow-x: hidden;
 }
 .page7{
     height: 100vh;
-    width: 100%; 
+    width: 100vw; 
+    /* background-color: #EF495D; */
     padding: 0vw 8vw;  
 }
 .page7 h1{
@@ -526,7 +512,7 @@ overflow-x: hidden;
 
 
 
-@media (max-width: 414px){
+@media (max-width: 600px){
     body{
         overflow-x: hidden;
     }
