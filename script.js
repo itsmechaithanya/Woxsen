@@ -113,6 +113,7 @@ function cursor(){
     var face = document.querySelector(".face")
     var navlogo = document.querySelector(".navlogo")
     var full = document.querySelector(".full")
+    var menu = document.querySelector(".menu")
 
     main.addEventListener("mouseenter", function(){
         gsap.to(cursor,{
@@ -163,6 +164,18 @@ function cursor(){
         });
     });
     full.addEventListener("mouseleave",function(){
+        gsap.to(cursor,{
+            opacity : 1,
+            scale : 1
+        });
+    });
+    menu.addEventListener("mouseenter",function(){
+        gsap.to(cursor,{
+            opacity : 0,
+            scale : 0
+        });
+    });
+    menu.addEventListener("mouseleave",function(){
         gsap.to(cursor,{
             opacity : 1,
             scale : 1
@@ -376,7 +389,7 @@ page4();
 
 function swiper(){
     var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 2,
+        spaceBetween: 0,
         mousewheel: true,
         pagination: {
           el: ".swiper-pagination",
