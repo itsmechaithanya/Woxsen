@@ -72,11 +72,6 @@ var cross = document.querySelector(".full i");
 
 var tl = gsap.timeline()
 
-tl.to("#navpart2 #navlinks,#navpart2 .icons,.menu",{
-    transform:"translateY(-100%)",
-    duration:0.4,
-    opacity:0,
-});
 tl.to(".full",{
     right:0,
     duration:.2,
