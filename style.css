@@ -234,16 +234,6 @@ overflow-x: hidden;
     text-transform: uppercase;
 }
 
-#page2>h1{
-    width: 60%;
-    padding-top: 3vw;
-    padding-bottom: 2vw;
-    padding-right: 8vw;
-    padding-left: 8vw;
-    font-size: 3vw;
-    /* background-color: crimson; */
-    /* text-transform: uppercase; */
-}
 #page2 #move span{
     text-transform: uppercase;
     color:#EF495D;
@@ -414,17 +404,17 @@ overflow-x: hidden;
     font-size:2vw;
     font-weight: 100;
 }
-.swiper{
+.page5 .swiper{
     height: 80vh;
     width: 85vw;
 }
-.swiper-slide {
+.page5 .swiper-slide {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
 }
-.swiper-slide .in{
+.page5 .swiper-slide .in{
     height: 75%;
     width: 100%;
     background-color:#ef495c3b;
@@ -432,33 +422,33 @@ overflow-x: hidden;
     display: flex;
     align-items: center;
 }
-.swiper-slide .in .leftt{
+.page5 .swiper-slide .in .leftt{
     width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.swiper-slide .in .leftt h2{
+.page5 .swiper-slide .in .leftt h2{
     font-size: 2.5vw;
 }
-.swiper-slide .in .leftt h2 span{
+.page5 .swiper-slide .in .leftt h2 span{
     font-size: 2.5vw;
     color: #EF495D;
 }
-.swiper-slide .rightt {
+.page5 .swiper-slide .rightt {
     width: 80%;
     height: 100%;
 }
-.swiper-slide img {
+.page5 .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.swiper-slide p{
+.page5 .swiper-slide p{
     font-size: 2vw;
 }
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+.page5 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
     background:#EF495D; /* Color for active dynamic bullet */
 }
 .page6{
@@ -495,8 +485,38 @@ overflow-x: hidden;
 .page7 h1 span{
     color: #EF495D;
 }
+.page6 .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
+  .page6 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .page6 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page6 .swiper-slide {
+    width: 60%;
+  }
+
+  .page6 .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+
+  .page6 .swiper-slide:nth-child(3n) {
+    width: 20%;
+  }
 
 
 
@@ -516,6 +536,28 @@ overflow-x: hidden;
         Width:100%;
         Height:100%;
         overflow-x: hidden;
+    }
+    #loader{
+        height: 100vh; 
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        color: white;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        overflow: hidden;
+     }
+     #loader h3{
+        font-size: 2vh;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    #loader span{
+       color: #EF495D;
     }
     #nav{
         position: fixed;
@@ -540,14 +582,14 @@ overflow-x: hidden;
         height: 100%;
     }
     .navlogo .firstlogo{
-        height: 15vw;
+        height: 12vw;
         margin-bottom: 1vw;
         padding-left: 1vw;
         /* margin-bottom: 1vw; */
     }
     .navlogo .second{
         padding-left: .7vw;
-        height: 12vh;
+        height:0vh;
     }
     .menu{
         color: #000000;
@@ -566,14 +608,14 @@ overflow-x: hidden;
         right: 0%;
     }
     .menu i{
-        font-size: 3vh;
+        font-size: 2vh;
         padding-top: .2vw;
         /* padding-left: 1vw; */
         padding-right: .5vw ;
     }
     .menu h4{
         padding-bottom: .1vw;
-        font-size: 3vh;
+        font-size: 2vh;
         font-weight: 100;
         font-family: matter light;
     }
@@ -590,7 +632,7 @@ overflow-x: hidden;
         /* background-color: aqua; */
     }
     #page1 h1{
-        font-size: 1.5vh;
+        font-size: 2vh;
         font-weight: 900;
         text-transform: capitalize;
         /* padding-bottom: 1vw; */
@@ -626,5 +668,221 @@ overflow-x: hidden;
     }
     .marq h1{
         text-transform: uppercase;
+    }
+    #page2 #move span{
+        text-transform: uppercase;
+        color:#EF495D;
+    }
+    #page2 .heading h1{
+        font-size: 3vh;
+        padding: 2vw 8vw;
+    }
+    #page2 .heading span{
+        text-transform: uppercase;
+        color:#EF495D;
+    }
+    #page2 .words{
+        padding: 0vw 8vw;
+    }
+    #page2 .words p span{
+        font-family:matter-light;
+        color: #afafaf;
+        font-size:2vh;
+        font-weight: 100;
+    }
+    #page3{
+        height:fit-content;
+        width: 100vw;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        /* padding-top: 2vw;
+        padding: 0vw 8vw; */
+    }
+    .back{
+        margin-top: 4vh;
+    }
+    .back img{
+        height:50vh;
+        width: 85vw;
+        object-position: center;
+        /* padding-top: 10vh; */
+        object-fit: cover;
+    }
+    .page4{
+        margin-top: 3vw;
+        height: fit-content;
+        width: 100%;
+        /* background-color: crimson; */
+    }
+    .page4 .head h1{
+        height: fit-content;
+        margin-bottom: 5vw;
+        /* background-color: blue; */
+        font-size: 3vh;
+        /* padding: 0vw 8vw; */
+    }
+    .page4 .head h1 span{
+        color: #EF495D;
+    }
+    .page4 #schools{
+        padding: 0vw 8vw;
+    }
+    .page4 #schools .box img{
+        height: 0vh;
+        width: 0vh;
+        object-fit: cover;
+        border-radius:1vw;
+        opacity: 0;
+        scale: 0;
+    }
+    .box a {
+        color: #000000;
+        text-decoration: none;
+        /* font-size: 1.5vw; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+        padding: 0vw 2vw;
+        border-top: 1.5px solid rgb(53, 53, 53);
+        transition: background-color 0.1s ease, color 0.3s ease;
+    }
+    .box a h3{
+        font-size: 2vh;
+    }
+    .box a h4{
+        font-size: 0vw;
+        color: #6f6f6f;
+    }
+    .box a:hover {
+        color:#EF495D;
+        background-color:#ef495c3b;
+        backdrop-filter: blur(10px);
+    }
+    .box:nth-last-child(1){
+        border-bottom: 1.5px solid rgb(53, 53, 53);
+    }
+    .rank{
+        margin-top: 3vh;
+        /* background-color: crimson; */
+    }
+    .rank h1{
+        font-size: 3vh;
+        padding: 0vw 8vw;
+    }
+    .rank h1 span{
+        color: #EF495D;
+    }
+    #moving{
+        margin: 3vw 0vw;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+    
+    }
+    #movee{
+        display: flex;
+        align-items: center;
+        animation-name: mobs;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        /* overflow: hidden; */
+    }
+    #movee img{
+        height: 13vh;
+    }
+    .page5{
+        height: fit-content;
+        width: 100vw;
+    }
+    .page5 h1{
+        color: #000000;
+        font-size: 3vh;
+        padding: 0vw 8vw;
+    }
+    .page5 h1 span{
+        color:#EF495D;
+    }
+    .page5 .words{
+        padding: 0vw 8vw;
+        padding-top: 2vw;
+    }
+    .page5 .words p span{
+        font-family:matter-light;
+        color: #afafaf;
+        font-size:2vh;
+        font-weight: 100;
+    }
+    .swiper{
+        height: 70vh;
+        width: 85vw;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .swiper-slide .in{
+        height: 50vh;
+        width: 100%;
+        background-color:#ef495c3b;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .swiper-slide .in .leftt{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-slide .in .leftt h2{
+        font-size: 2.5vh;
+    }
+    .swiper-slide .in .leftt h2 span{
+        font-size: 2.5vh;
+        color: #EF495D;
+    }
+    .swiper-slide .rightt {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-slide p{
+        font-size: 2vh;
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+        background:#EF495D; /* Color for active dynamic bullet */
+    }
+    .page6{
+        margin-top: 3vw;
+        /* background-color: aquamarine; */
+        height: 100vh;
+        width: 100vw; 
+        padding: 2vw 8vw;  
+    }
+    .page6 h1{
+        font-size: 3vh;
+    }
+    .page6 h1 span{
+        color: #EF495D;
+    }
+    .page6 .words{
+        padding-top: 1.5vh;
+    }
+    .page6 .words p span{
+        font-family:matter-light;
+        color: #afafaf;
+        font-size:2vh;
+        font-weight: 100;
     }
 }

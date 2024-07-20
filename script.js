@@ -387,6 +387,7 @@ function swiper(){
             enabled: true,
           },
       });
+
 }
 swiper();
 
