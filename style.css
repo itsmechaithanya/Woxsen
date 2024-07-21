@@ -206,7 +206,7 @@ overflow-x: hidden;
     /* padding-bottom: 1vw; */
 }
 #page1 video{
-    width: 100vw;
+    width: 101vw;
     height:100vh;
     object-fit: cover;
 }
@@ -597,6 +597,97 @@ overflow-x: hidden;
 .page7 h1 span{
     color: #EF495D;
 }
+#fpage{
+    height: 35vh;
+    width: 100vw;
+    margin-top: -10vh;
+    padding: 0vw 10vw;
+    display: flex;
+    /* background-color: cornflowerblue; */
+}
+#fpage #p1{
+    height: inherit;
+    width: 20%;
+    /* background-color: crimson; */
+}
+#fpage #p1 img{
+    width: 50%;
+}
+#fpage #p1 h3{
+    margin-top: 1vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+#fpage #p1 i{
+    color: #FC4F52;
+    font-size: 1.3vw;
+    margin-right: .5vw;
+}
+#fpage #p2{
+    height: inherit;
+    width: 20%;
+    /* background-color: rgb(63, 20, 220); */
+}
+#fpage #p3{
+    height: inherit;
+    width: 20%;
+    /* background-color: rgb(213, 20, 220); */
+}
+#fpage #p4{
+    height: inherit;
+    width: 20%;
+    /* background-color: rgb(20, 220, 50); */
+}
+#fpage #p5{
+    height: inherit;
+    width: 20%;
+    /* background-color: rgb(143, 220, 20); */
+}
+#fpage h1{
+    font-size: 2vw;
+    font-weight: 500;
+}
+#fpage h4{
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#fpage #p5 input{
+    padding: 1vw 0vw;
+    font-size: .75vw;
+    margin-top: 1vw;
+    border: none;
+    background-color: #ffffff00;
+}
+#fpage #p5 button{
+    padding: 1vw;
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    border-radius: .5vw;
+    font-size: .9vw;
+}
+.gradient-border {
+    height: 10vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gradient-border h1{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Height of the border */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0));
+}
 
 
 
@@ -612,7 +703,7 @@ overflow-x: hidden;
     html,body{
         Width:100%;
         Height:100%;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     #loader{
         height: 100vh; 
@@ -694,8 +785,8 @@ overflow-x: hidden;
         font-size: 2.5vh;
     }
     .full{
-        height: 100vh;
-        width: 100vw;
+        height: 0vh;
+        width: 0vw;
         background-color:#7a1a1aa0;
         backdrop-filter: blur(20px);
         position: absolute;
@@ -708,7 +799,7 @@ overflow-x: hidden;
         padding: 0vw 8vw;
     }
     .full h4{
-        font-size: 3.3vh;
+        font-size: 0vh;
         font-weight: 100;
         font-family: Matter;
         margin-bottom: 1.5vw;
@@ -719,13 +810,13 @@ overflow-x: hidden;
         text-decoration: none;
     }
     .full #right h4{
-        font-size: 2.3vh;
+        font-size: 0vh;
     }
     .full a:hover{
         text-decoration: underline;
     }
     .full i{
-        font-size: 2.9vw;
+        font-size: 0vw;
         background-color:#ef495c3b;
         backdrop-filter: blur(10px);
         color: #000000;
@@ -1105,5 +1196,120 @@ overflow-x: hidden;
         border-radius: 50%;
         opacity: .08;
         background-color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+    #fpage{
+        height: 35vh;
+        width: 100vw;
+        margin-top: -35vh;
+        padding: 0vw 3vw;
+        display: flex;
+        flex-direction: column;
+        /* background-color: cornflowerblue; */
+    }
+    #fpage #p1{
+        height: inherit;
+        width: 100%;
+        padding:0vw 5vw;
+        /* background-color: crimson; */
+    }
+    #fpage #p1 img{
+        width: 25vw;
+    }
+    #fpage #p1 h3{
+        margin-top: 1vw;
+        font-size: 2vh;
+        font-weight: 500;
+    }
+    #fpage #p1 i{
+        color: #FC4F52;
+        font-size: 1.3vh;
+        margin-right: .5vw;
+    }
+    #fpage #p2{
+        height: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding:0vw 5vw;
+        /* background-color: rgb(63, 20, 220); */
+    }
+    #fpage #p3{
+        height: inherit;
+        width: 100%;
+        padding:0vw 5vw;
+        /* background-color: rgb(213, 20, 220); */
+    }
+    #fpage #p4{
+        height: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding:0vw 5vw;
+        /* background-color: rgb(20, 220, 50); */
+    }
+    #fpage #p5{
+        height: inherit;
+        width: 100%;
+        padding:0vw 5vw;
+        /* background-color: rgb(143, 220, 20); */
+    }
+    #fpage h1{
+        font-size: 3vh;
+        font-weight: 500;
+    }
+    #fpage h4{
+        margin-top: 1vw;
+        font-size: 2vh;
+        font-weight: 500;
+    }
+    #fpage #p5 input{
+        padding: 1vw 0vw;
+        font-size: 1.5vh;
+        margin-top: 1vh;
+        border: none;
+        background-color: #ffffff00;
+    }
+    #fpage #p5 button{
+        padding: 1vw;
+        background-color: black;
+        color: white;
+        border:1px solid white;
+        border-radius: .5vw;
+        font-size: 1.5vh;
+    }
+    .gradient-border {
+        height: 10vh;
+        width: 100vw;
+        margin-top: 28vh;
+        position: relative;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .gradient-border h1{
+        font-size: 1.5vh;
+        margin-top: 8vw;
+        font-weight: 500;
+    }
+    .gradient-border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px; /* Height of the border */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0));
     }
 }
