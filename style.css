@@ -755,34 +755,35 @@ overflow-x: hidden;
         padding-left: 1vw;
         /* margin-bottom: 1vw; */
     }
-    .navlogo .second{
-        padding-left: .7vw;
-        height:0vh;
+    .navlogo .sec{
+        height:7vh;
+        margin-left:-2vw ;
+        margin-top: -1vw;
     }
     .menu{
-        color: #000000;
+        /* color: #000000;
         background-color:#ffffff3b;
-        backdrop-filter: blur(10px);
-        padding: .5vw .5vw;
-        border-radius: 2vh 0vw 0vw 2vh ;
+        backdrop-filter: blur(10px); */
+        padding: 0vw 0vw;
+        /* border-radius: 2vh 0vw 0vw 2vh ; */
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         z-index: 9;
-        top: 2.5%;
+        top: -2.5%;
         right: 0%;
     }
     .menu i{
-        font-size: 2vh;
+        font-size: 0vh;
         padding-top: .2vw;
         /* padding-left: 1vw; */
         padding-right: .5vw ;
     }
     .menu h4{
         padding-bottom: .2vw;
-        font-size: 2.5vh;
+        font-size:0vh;
     }
     .full{
         height: 0vh;
@@ -859,12 +860,12 @@ overflow-x: hidden;
         
     }
     #page1{
-        min-height: 100vh;
+        min-height: 32vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content:end;
         padding: 0vw .8vw;
         /* padding-top: 11vh; */
         /* background-color: aqua; */
@@ -877,7 +878,7 @@ overflow-x: hidden;
     }
     #page1 video{
         width: 100vw;
-        height:100vh;
+        height:23vh;
         object-fit: cover;
     }
     #page2{
