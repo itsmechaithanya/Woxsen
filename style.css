@@ -40,7 +40,7 @@ overflow-x: hidden;
  }
  #loader h3{
      font-size: 2vw;
-     font-weight: 100;
+     /* font-weight: 100; */
      text-transform: uppercase;
  }
  #loader span{
