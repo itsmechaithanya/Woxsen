@@ -406,6 +406,44 @@ function ppp(){
         stagger:.2,
         color:`#000000`,
     })
+
+    var clutter = "";
+    document. querySelector (".page7 #four #bottom p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page7 #four #bottom p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page7 #four #bottom p span",{
+        scrollTrigger:{
+            trigger:`.page7 #four #bottom p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
+
+    var clutter = "";
+    document. querySelector (".page7 #five #left p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page7 #five #left p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page7 #five #left p span",{
+        scrollTrigger:{
+            trigger:`.page7 #five #left p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
 }
 ppp();
 
