@@ -777,12 +777,27 @@ overflow-x: hidden;
     color: #EF495D;
 }
 #vidc{
+margin: 0vw 8vw;
+position: relative;
+}
+#vidc #play{
+    height: 10vw;
+    width: 10vw;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 1.5vw;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    /* transform: translate(-50%,-50%); */
 }
 #myVideo {
-    width: 90%;
+    width: 100%;
     border-radius: 1vw;
 }
 #playButton {

@@ -109,6 +109,8 @@ function cursor(){
     var navlogo = document.querySelector(".navlogo")
     var full = document.querySelector(".full")
     var menu = document.querySelector(".menu")
+    var vid = document.querySelector("#vidc")
+    var play = document.querySelector("#play")
 
     main.addEventListener("mouseenter", function(){
         gsap.to(cursor,{
@@ -182,8 +184,30 @@ function cursor(){
         top:dets.y
         });
     });
+    vid.addEventListener("mouseenter", function(){
+        gsap.to(play,{
+            opacity : 1,
+            scale : 1,
+        });
+    });
+    vid.addEventListener("mouseleave",function(){
+        gsap.to(play,{
+            opacity : 0,
+            scale : 0
+        });
+    });
+    vid.addEventListener("mousemove",function(dets){
+        gsap.to(play,{
+        left:dets.x-100,
+        top:dets.y-100
+        });
+    });
 }
 cursor();
+
+
+
+
 
 function navan(){
     gsap.to(".navlogo img",{
@@ -493,7 +517,8 @@ function swiper(){
 }
 swiper();
 
-var active = 5;
+function earth (){
+    var active = 5;
 var mncircles = document.querySelectorAll(".mncircle");
 var sec = document.querySelectorAll(".second");
 
@@ -538,7 +563,8 @@ gsap.to("#circle",{
     duration: 2,
     // delay:5,
 })
-
+}
+earth();
 Shery.makeMagnet(".magnet");
 
 // gsap.to(".elem",{
