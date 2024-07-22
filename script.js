@@ -349,7 +349,63 @@ function ppp(){
         stagger:.2,
         color:`#000000`,
     })
+    
+    var clutter = "";
+    document. querySelector (".page7 #one #right p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page7 #one #right p"). innerHTML = clutter;
+    })
 
+    gsap.to(".page7 #one #right p span",{
+        scrollTrigger:{
+            trigger:`.page7 #one #right p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
+
+    var clutter = "";
+    document. querySelector (".page7 #two #bottom p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page7 #two #bottom p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page7 #two #bottom p span",{
+        scrollTrigger:{
+            trigger:`.page7 #two #bottom p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
+
+    var clutter = "";
+    document. querySelector (".page7 #three #right p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page7 #three #right p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page7 #three #right p span",{
+        scrollTrigger:{
+            trigger:`.page7 #three #right p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
 }
 ppp();
 
@@ -442,8 +498,8 @@ gsap.to("#circle",{
     rotate:0,
     ease:Expo.easeInOut,
     duration: 2,
+    // delay:5,
 })
-
 
 Shery.makeMagnet(".magnet");
 

@@ -583,31 +583,139 @@ overflow-x: hidden;
     opacity: .08;
     background-color: #000000;
 }
-
-
-  .page7{
-    height: 100vh;
+.page7{
+    height:300vh;
     width: 100vw; 
     /* background-color: #EF495D; */
-    padding: 0vw 8vw;  
+    /* padding: 0vw 8vw;   */
 }
 .page7 h1{
     font-size: 3vw;
+    padding: 0vw 8vw;
 }
 .page7 h1 span{
     color: #EF495D;
 }
+.page7 #one {
+    height: 50vh;
+    width: 100vw;
+    padding: 0vw 8vw;
+    display: flex;
+    margin-top: 3vw;
+    /* background-color: aqua; */
+}
+.page7 #one #left{
+    width: 40%;
+    height: 120%;
+    /* background-color: darkblue; */
+}
+.page7 #one #left img{
+    height: 100%;
+    width: 100%;
+    border-radius:1vw;
+    margin-top: 1vw;
+    object-fit: cover;
+}
+.page7 #one #right{
+    width: 60%;
+    height: 100%;
+    padding-left: 2vw;
+    margin-top: 10vw;
+    /* background-color: darkgreen; */
+}
+.page7 #one #right p span{
+    font-family:matter-light;
+    color: #afafaf;
+    font-size:2vw;
+    font-weight: 100;
+}
+
+.page7 #two {
+    height: 80vh;
+    width: 100vw;
+    padding: 0vw 8vw;
+    margin-top: 3vw;
+    /* background-color: aqua; */
+}
+.page7 #two #top{
+    width: 80vw;
+    height: 60vh;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    /* background-color: darkblue; */
+}
+.page7 #two #top img{
+    height: 100%;
+    width: 100%;
+    border-radius:1vw;
+    /* margin-top: 1vw; */
+    object-fit: cover;
+}
+.page7 #two #bottom{
+    width: 90%;
+    margin-top: 3vw;
+    /* background-color: crimson; */
+}
+.page7 #two #bottom p span{
+    font-family:matter-light;
+    color: #afafaf;
+    font-size:2vw;
+    font-weight: 100;
+}
+.page7 #three{
+    height: 80vh;
+    width: 100vw;
+    padding: 0vw 8vw;
+    display: flex;
+    /* background-color: aqua; */
+}
+.page7 #three #left{
+    height: 50vh;
+    width: 65%;
+
+    /* background-color: #EF495D; */
+}
+.page7 #three #left img{
+    height: 100%;
+    width: 100%;
+    border-radius:1vw;
+    /* margin-top: 1vw; */
+    object-fit: cover;
+}
+.page7 #three #right{
+    height: 50vh;
+    width: 30%;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+.page7 #three #right p span{
+    font-family:matter-light;
+    color: #afafaf;
+    font-size:2vw;
+    font-weight: 100;
+}
+
+
+
+
+
+
 #fpage{
-    height: 35vh;
+    height: fit-content;
     width: 100vw;
     margin-top: -10vh;
-    padding: 0vw 10vw;
+    padding: 0vw 5vw;
+    padding-bottom: 2vw;
     display: flex;
     /* background-color: cornflowerblue; */
 }
 #fpage #p1{
     height: inherit;
-    width: 20%;
+    width:23%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
     /* background-color: crimson; */
 }
 #fpage #p1 img{
@@ -619,36 +727,40 @@ overflow-x: hidden;
     font-weight: 500;
 }
 #fpage #p1 i{
-    color: #FC4F52;
+    color: #EF495D;
     font-size: 1.3vw;
     margin-right: .5vw;
 }
 #fpage #p2{
     height: inherit;
-    width: 20%;
+    width: 16%;
     /* background-color: rgb(63, 20, 220); */
 }
 #fpage #p3{
     height: inherit;
-    width: 20%;
+    width: 16%;
     /* background-color: rgb(213, 20, 220); */
 }
 #fpage #p4{
     height: inherit;
-    width: 20%;
+    width: 16%;
     /* background-color: rgb(20, 220, 50); */
 }
 #fpage #p5{
     height: inherit;
-    width: 20%;
+    width: 16%;
     /* background-color: rgb(143, 220, 20); */
+}
+#fpage #p6{
+    height: inherit;
+    width: 16%;
 }
 #fpage h1{
     font-size: 2vw;
     font-weight: 500;
 }
 #fpage h4{
-    margin-top: 1.5vw;
+    margin-top: 1vw;
     font-size: 1vw;
     font-weight: 500;
 }
@@ -672,12 +784,17 @@ overflow-x: hidden;
     width: 100vw;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: .3vw;
 }
 .gradient-border h1{
     font-size: 1vw;
     font-weight: 500;
+}
+.gradient-border h1 span{
+    color: #EF495D;
 }
 .gradient-border::before {
     content: '';
@@ -1292,7 +1409,7 @@ overflow-x: hidden;
     .gradient-border {
         height: 10vh;
         width: 100vw;
-        margin-top: 28vh;
+
         position: relative;
         display: flex;
         /* align-items: center; */
