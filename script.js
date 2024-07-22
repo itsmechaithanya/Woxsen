@@ -487,6 +487,25 @@ function ppp(){
         stagger:.2,
         color:`#000000`,
     })
+
+    var clutter = "";
+    document. querySelector (".page9 p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page9 p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page9 p span",{
+        scrollTrigger:{
+            trigger:`.page9 p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
 }
 ppp();
 

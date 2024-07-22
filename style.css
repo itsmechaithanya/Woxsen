@@ -764,7 +764,7 @@ overflow-x: hidden;
     font-weight: 100;
 }
 .page8{
-    height: 200vh;
+    height: 100vh;
     width: 100vw;
     /* background-color: salmon; */
 }
@@ -827,19 +827,25 @@ position: relative;
     font-size: 20px;
     cursor: pointer;
 }
-#page9{
+.page9{
     height: 100vh;
     width: 100vw;
-    margin-top: 5vw;
+    margin-top: 10vh;
+    padding: 0vw 8vw;
     /* background-color: salmon; */
 }
-#page9 h1{
+.page9 h1{
     font-size: 3vw;
-    padding: 0vw 8vw;
     padding-top:1vw;
 }
-#page9 h1 span{
+.page9 h1 span{
     color: #EF495D;
+}
+.page9 p span{
+    font-family:matter-light;
+    color: #afafaf;
+    font-size:2vw;
+    font-weight: 100;
 }
 #fpage{
     height: fit-content;
