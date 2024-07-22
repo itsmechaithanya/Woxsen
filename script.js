@@ -468,6 +468,25 @@ function ppp(){
         stagger:.2,
         color:`#000000`,
     })
+
+    var clutter = "";
+    document. querySelector (".page8 #words p"). textContent.split(" ").forEach(function(dets){
+        clutter += `<span> ${dets} </span>`
+        document. querySelector (".page8 #words p"). innerHTML = clutter;
+    })
+
+    gsap.to(".page8 #words p span",{
+        scrollTrigger:{
+            trigger:`.page8 #words p span`,
+            scroller:".main",
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true,
+            scrub:2,
+        },
+        stagger:.2,
+        color:`#000000`,
+    })
 }
 ppp();
 
@@ -565,6 +584,19 @@ gsap.to("#circle",{
 })
 }
 earth();
+
+function playy(){
+    document.getElementById('myVideo').addEventListener('click', function() {
+        if (this.paused) {
+            this.play();
+        } else {
+            this.pause();
+        }
+        this.muted = !this.muted;
+    });
+}
+playy();
+
 Shery.makeMagnet(".magnet");
 
 // gsap.to(".elem",{
