@@ -3,7 +3,7 @@ function loco(){
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true,
-   smoothMobile:false
+   smoothMobile:true,
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 ScrollTrigger.scrollerProxy(".main", {
