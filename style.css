@@ -1071,6 +1071,21 @@ position: relative;
         padding-bottom: .2vw;
         font-size:0vh;
     }
+    .cursor{
+        height: 0vw;
+        width: 0vw;
+        background-color:rgba(210, 210, 210, 0.243);
+        opacity: 0;
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        position: absolute;
+        z-index: inherit;
+        transition: background-image ease 0.5s;
+        background-position: center;
+        background-size: cover;
+        transform: translate(-50%,-50%);
+        
+    }
     .full{
         height: 0vh;
         width: 0vw;
@@ -1668,8 +1683,112 @@ position: relative;
         font-size:2vh;
         font-weight: 100;
     }
-
-
+    .page8{
+        height: fit-content;
+        width: 100vw;
+        /* background-color: salmon; */
+    }
+    .page8 h1{
+        font-size: 3vh;
+        padding: 0vw 8vw;
+        padding-bottom:1vh;
+    }
+    .page8 h1 span{
+        color: #EF495D;
+    }
+    #vidc{
+    margin: 0vw 8vw;
+    position: relative;
+    }
+    #vidc #play{
+        height: 0vw;
+        width: 0vw;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color:whitesmoke;
+        color: #000000;
+        font-size: 1.5vw;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0;
+        scale: 0;
+        /* transform: translate(-50%,-50%); */
+    }
+    .page8 p span{
+        font-family:matter-light;
+        color: #afafaf;
+        font-size:2vh;
+        font-weight: 100;
+    }
+    .page8 #words{
+        padding: 2vw 8vw;
+    }
+    .page8 h4{
+        font-size: 0vh;
+        color: #343333;
+        font-weight: 100;
+        padding: 0vw 8vw;
+    }
+    #myVideo {
+        width: 100%;
+        border-radius: 1vh;
+    }
+    #playButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .page9{
+        height: 120vh;
+        width: 100vw;
+        margin-top: 5vh;
+        /* background-color: salmon; */
+    }
+    .page9 h1{
+        font-size: 3vh;
+        padding:1vw 0vw;
+        padding-bottom: 1vh;
+    }
+    .page9 h1 span{
+        color: #EF495D;
+    }
+    .page9 p span{
+        font-family:matter-light;
+        color: #afafaf;
+        font-size:2vh;
+        font-weight: 100;
+    }
+    #box{
+        /* background-color: slateblue; */
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-right: 2vw;
+        justify-content: space-between;
+    }
+    #box h4{
+        font-size: 2vh;
+        color: #afafaf;
+        font-weight: 500;
+        /* margin-top: 2vh; */
+    }
+    #box #rbox{
+        height: 60vh;
+        background-color: #a13f3f;
+    }
+    #box #rbox img{
+        height: 100%;
+        width: 100%;
+    }
 
 
 
@@ -1677,16 +1796,16 @@ position: relative;
 
 
     #fpage{
-        height: 35vh;
+        height: 160vh;
         width: 100vw;
-        margin-top: -35vh;
-        padding: 0vw 3vw;
+        /* margin-top: -35vh; */
+        /* padding: 0vw 3vw; */
         display: flex;
         flex-direction: column;
         /* background-color: cornflowerblue; */
     }
     #fpage #p1{
-        height: inherit;
+        height: fit-content;
         width: 100%;
         padding:0vw 5vw;
         /* background-color: crimson; */
@@ -1701,11 +1820,11 @@ position: relative;
     }
     #fpage #p1 i{
         color: #FC4F52;
-        font-size: 1.3vh;
-        margin-right: .5vw;
+        font-size: 3vh;
+        margin-right: 3vw;
     }
     #fpage #p2{
-        height: inherit;
+        height: fit-content;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1714,25 +1833,38 @@ position: relative;
         /* background-color: rgb(63, 20, 220); */
     }
     #fpage #p3{
-        height: inherit;
+        height: fit-content;
         width: 100%;
         padding:0vw 5vw;
+        margin-top: 5vh;
         /* background-color: rgb(213, 20, 220); */
     }
     #fpage #p4{
-        height: inherit;
+        height: fit-content;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding:0vw 5vw;
+        margin-top: 5vh;
         /* background-color: rgb(20, 220, 50); */
     }
     #fpage #p5{
-        height: inherit;
+        height: fit-content;
         width: 100%;
         padding:0vw 5vw;
+        margin-top: 5vh;
         /* background-color: rgb(143, 220, 20); */
+    }
+    #fpage #p6{
+        height: fit-content;
+        width: 100%;
+        padding:0vw 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 5vh;
+        /* background-color: #EF495D; */
     }
     #fpage h1{
         font-size: 3vh;
@@ -1759,18 +1891,24 @@ position: relative;
         font-size: 1.5vh;
     }
     .gradient-border {
-        height: 10vh;
+        height: 20vh;
         width: 100vw;
-
+        margin-top: 13vh;
+        /* background-color: #EF495D; */
         position: relative;
-        display: flex;
-        /* align-items: center; */
-        justify-content: center;
+        /* margin-top: -10vh; */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
     }
     .gradient-border h1{
         font-size: 1.5vh;
-        margin-top: 8vw;
+        /* margin-top: 8vw; */
         font-weight: 500;
+    }
+    .gradient-border h1:first-child{
+        margin-top: -10vh;
+        /* background-color: #afafaf; */
     }
     .gradient-border::before {
         content: '';
