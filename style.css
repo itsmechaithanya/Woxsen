@@ -847,6 +847,28 @@ position: relative;
     font-size:2vw;
     font-weight: 100;
 }
+#box{
+    /* background-color: slateblue; */
+    margin-top: 5vh;
+    display: flex;
+    padding-right: 2vw;
+    justify-content: space-between;
+}
+#box h4{
+    font-size: 3vw;
+    color: #afafaf;
+    font-weight: 500;
+    margin-top: 2vh;
+}
+#box #rbox{
+    height: 60vh;
+    background-color: #a13f3f;
+}
+#box #rbox img{
+    height: 100%;
+    width: 100%;
+}
+
 #fpage{
     height: fit-content;
     width: 100vw;
